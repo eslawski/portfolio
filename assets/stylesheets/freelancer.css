@@ -206,6 +206,7 @@ section.success {
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
+  border-radius: 10px;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
@@ -216,10 +217,15 @@ section.success {
   height: 20px;
   font-size: 20px;
   text-align: center;
-  top: 50%;
+  top: 40%;
   margin-top: -12px;
   color: white;
 }
+
+.portfolio-image {
+  border-radius: 10px;
+}
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
@@ -484,6 +490,9 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.portfolio-modal .portfolio-action-label {
+  padding-left: 5px;
 }
 #skipnav a {
   padding: 6px;
