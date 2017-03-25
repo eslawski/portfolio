@@ -206,7 +206,7 @@ section.success {
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
@@ -217,12 +217,16 @@ section.success {
   height: 20px;
   font-size: 20px;
   text-align: center;
-  top: 40%;
+  top: 50%;
   margin-top: -12px;
   color: white;
 }
 
 .portfolio-image {
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio-image-lg {
   border-radius: 10px;
 }
 
@@ -517,4 +521,15 @@ fieldset[disabled] .btn-success.active {
 }
 div#maincontent {
   outline: none;
+}
+.portfolio-subtitle {
+  background-color: #e6e6e6;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+.portfolio-subtitle .portfolio-subtitle-name {
+  margin-top: 0;
+}
+.portfolio-subtitle .portfolio-subtitle-description {
+  font-size: 17px;
 }

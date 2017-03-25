@@ -14,13 +14,15 @@
                     <a href="#{{ portfolio_item.modal_id}}" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <h3>{{ portfolio_item.project_name }}</h3>
-                                <br>
-                                <div>{{ portfolio_item.short_description }}</div>
+                                <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
                         <img src="{{ portfolio_item.image_path}}" class="img-responsive portfolio-image">
                     </a>
+                    <div class="portfolio-subtitle">
+                        <h3 class="portfolio-subtitle-name">{{ portfolio_item.project_name }}</h3>
+                        <p class="portfolio-subtitle-description">{{ portfolio_item.short_description }}</p>
+                    </div>
                 </div>
             {% endfor %}
         </div>

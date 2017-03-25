@@ -14,12 +14,13 @@
                     <div class="modal-body">
                         <h2>{{portfolio_item.project_name}}</h2>
                         <hr class="star-primary">
-                        <img src="{{portfolio_item.image_path}}" class="img-responsive img-centered portfolio-image" alt="">
+                        <img src="{{portfolio_item.image_path}}" class="img-responsive img-centered portfolio-image-lg" alt="">
                         <p>{{portfolio_item.long_description}}</p>
                             <a href="{{portfolio_item.demo_link}}" class="btn btn-lg btn-primary">
                                 <i class="fa fa-{{portfolio_item.demo_icon}}"></i>
                                 <span class="portfolio-action-label">Try it!</span>
                             </a>
+                            &nbsp
                             <a href="{{portfolio_item.github_link}}" class="btn btn-lg btn-primary">
                                 <i class="fa fa-github"></i>
                                 <span class="portfolio-action-label">View on Github</span>
