@@ -551,3 +551,7 @@ div#maincontent {
 .skill-level {
   font-size: 2em;
 }
+.work-experience {
+  margin: 0;
+  padding-top: 20px;
+}
