@@ -232,6 +232,11 @@ section.success {
 
 .portfolio-image-lg {
   border-radius: 10px;
+  max-width: 70%;
+}
+
+.portfolio-long-description {
+  padding: 20px 0;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -533,6 +538,8 @@ div#maincontent {
   background-color: #FFFFFF;
   border-radius: 0 0 10px 10px;
   padding: 10px;
+  max-width: 400px; /* Matches the portfolio max-width value. */
+  margin: 0 auto;
 }
 .portfolio-subtitle .portfolio-subtitle-name {
   margin-top: 0;
@@ -554,4 +561,11 @@ div#maincontent {
 .work-experience {
   margin: 0;
   padding-top: 20px;
+}
+
+a:active,
+a:focus
+{
+    outline: none !important;
+    -webkit-appearance: none;
 }

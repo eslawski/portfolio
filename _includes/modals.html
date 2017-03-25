@@ -15,7 +15,6 @@
                         <h2>{{portfolio_item.project_name}}</h2>
                         <hr class="star-primary">
                         <img src="{{portfolio_item.image_path}}" class="img-responsive img-centered portfolio-image-lg" alt="">
-                        <p>{{portfolio_item.long_description}}</p>
                             {% if portfolio_item.demo_link %}
                                 <a href="{{portfolio_item.demo_link}}" class="btn btn-lg btn-primary">
                                     <i class="fa fa-{{portfolio_item.demo_icon}}"></i>
@@ -27,8 +26,7 @@
                                 <i class="fa fa-github"></i>
                                 <span class="portfolio-action-label">View on Github</span>
                             </a>
-                        <br>
-                        <br>
+                            <p class="portfolio-long-description">{{portfolio_item.long_description}}</p>
                         <button type="button" class="btn btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
