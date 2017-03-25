@@ -1,6 +1,6 @@
 <!-- Generates all the portfolio modals -->
 {% for portfolio_item in site.portfolio %}
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="{{portfolio_item.modal_id}}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -16,11 +16,13 @@
                         <hr class="star-primary">
                         <img src="{{portfolio_item.image_path}}" class="img-responsive img-centered portfolio-image-lg" alt="">
                         <p>{{portfolio_item.long_description}}</p>
-                            <a href="{{portfolio_item.demo_link}}" class="btn btn-lg btn-primary">
-                                <i class="fa fa-{{portfolio_item.demo_icon}}"></i>
-                                <span class="portfolio-action-label">Try it!</span>
-                            </a>
-                            &nbsp
+                            {% if portfolio_item.demo_link %}
+                                <a href="{{portfolio_item.demo_link}}" class="btn btn-lg btn-primary">
+                                    <i class="fa fa-{{portfolio_item.demo_icon}}"></i>
+                                    <span class="portfolio-action-label">Try it!</span>
+                                </a>
+                                &nbsp
+                            {% endif %}
                             <a href="{{portfolio_item.github_link}}" class="btn btn-lg btn-primary">
                                 <i class="fa fa-github"></i>
                                 <span class="portfolio-action-label">View on Github</span>
