@@ -41,7 +41,32 @@ skills:
     level: 5
   - name: Javascript
     level: 5
-  - name: Angular
+  - name: HTML/CSS
+    level: 4
+  - name: SQL
+    level: 4
+  - name: Sencha Ext JS
+    level: 4
+  - name: Agile Methodology
+    level: 4
+  - name: C#
+    level: 4
+  - name: C++
     level: 3
-  - name: Html/css
+  - name: Angular 2
     level: 3
+  - name: Android SDK
+    level: 3
+  - name: Bootstrap CSS
+    level: 3
+  - name: JQuery
+    level: 3
+  - name: AJAX
+    level: 3
+  - name: Jekyll
+    level: 2
+  - name: nodeJS
+    level: 2
+  - name: python
+    level: 2
+

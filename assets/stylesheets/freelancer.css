@@ -560,7 +560,7 @@ div#maincontent {
 }
 .work-experience {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 a:active,
@@ -576,4 +576,8 @@ a:focus
 .profile-pic {
   float: left;
   margin-right: 10px;
+}
+.centered-column-content {
+  margin-right: auto;
+  margin-left: auto;
 }

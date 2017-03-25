@@ -1,6 +1,6 @@
 <!-- Skills Section -->
 <section class="success" id="skills">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Skills</h2>
@@ -12,16 +12,16 @@
                  two columns to display them nicley. -->
             {% assign skill_amount = site.skills | size %}
             {% assign half_skill_amount = skill_amount | divided_by: 2 %}
-            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-6">
-                <table>
+            <div class="col-lg-5 col-lg-offset-1 col-md-7 col-sm-7">
+                <table class="centered-column-content">
                     <!-- Iterate over the first half the skills -->
                     {% for skill in site.skills limit: half_skill_amount %}
                         {% include skill.html skill=skill %}
                     {% endfor %}
                 </table>
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-6">
-                <table>
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <table class="centered-column-content">
                     <!-- Iterate over the second half the skills -->
                     {% for skill in site.skills offset: half_skill_amount %}
                         {% include skill.html skill=skill %}
@@ -34,7 +34,7 @@
              when boostrap attempts to use one column for displaying two tables. -->
         <div class="row hidden-lg hidden-md hidden-sm">
             <div class="col-xs-12">
-                <table>
+                <table class="centered-column-content">
                     {% for skill in site.skills %}
                         {% include skill.html skill=skill %}
                     {% endfor %}
