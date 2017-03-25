@@ -572,3 +572,8 @@ a:focus
 .portfolio-action-button {
   margin: 0 10px;
 }
+
+.profile-pic {
+  float: left;
+  margin-right: 10px;
+}
