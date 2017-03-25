@@ -29,10 +29,14 @@ hr.star-light,
 hr.star-primary {
   padding: 0;
   border: none;
+  background-color: none;
   border-top: solid 5px;
   text-align: center;
   max-width: 250px;
   margin: 25px auto 30px;
+}
+hr.star-primary.gray:after {
+  background-color: #ececec;
 }
 hr.star-light:after,
 hr.star-primary:after {
@@ -239,6 +243,9 @@ section.success {
 }
 #portfolio * {
   z-index: 2;
+}
+#portfolio {
+    background-color: #ececec;
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -523,7 +530,7 @@ div#maincontent {
   outline: none;
 }
 .portfolio-subtitle {
-  background-color: #e6e6e6;
+  background-color: #FFFFFF;
   border-radius: 0 0 10px 10px;
   padding: 10px;
 }
@@ -532,4 +539,8 @@ div#maincontent {
 }
 .portfolio-subtitle .portfolio-subtitle-description {
   font-size: 17px;
+}
+.blog-placeholder {
+  text-align: center;
+  padding-top: 20px;
 }
