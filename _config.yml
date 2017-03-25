@@ -34,3 +34,14 @@ exclude:
 
 collections:
   - portfolio
+
+# Pay very close attention to the spacing here. It matters.
+skills:
+  - name: Java
+    level: 5
+  - name: Javascript
+    level: 5
+  - name: Angular
+    level: 3
+  - name: Html/css
+    level: 3

@@ -7,18 +7,45 @@
                 <hr class="star-light">
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        <div class="row hidden-xs">
+            <!-- As long as the screen is not extra small split the skills up into
+                 two columns to display them nicley. -->
+            {% assign skill_amount = site.skills | size %}
+            {% assign half_skill_amount = skill_amount | divided_by: 2 %}
+            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-6">
+                <table>
+                    <!-- Iterate over the first half the skills -->
+                    {% for skill in site.skills limit: half_skill_amount %}
+                        {% include skill.html skill=skill %}
+                    {% endfor %}
+                </table>
             </div>
-            <div class="col-lg-4">
-                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <div class="col-lg-4 col-md-5 col-sm-6">
+                <table>
+                    <!-- Iterate over the second half the skills -->
+                    {% for skill in site.skills offset: half_skill_amount %}
+                        {% include skill.html skill=skill %}
+                    {% endfor %}
+                </table>
             </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline">
-                    <i class="fa fa-download"></i> Download Resume
-                </a>
+        </div>
+
+        <!-- Extra small screens show skills all in one column. A minor alignment issue arises
+             when boostrap attempts to use one column for displaying two tables. -->
+        <div class="row hidden-lg hidden-md hidden-sm">
+            <div class="col-xs-12">
+                <table>
+                    {% for skill in site.skills %}
+                        {% include skill.html skill=skill %}
+                    {% endfor %}
+                </table>
             </div>
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="#" class="btn btn-lg btn-outline">
+                <i class="fa fa-download"></i> Download Resume
+            </a>
         </div>
     </div>
 </section>

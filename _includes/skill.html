@@ -1,0 +1,8 @@
+<tr>
+    <td><h3 class="skill-name">{{skill.name}}</h3></td>
+    <td class="skill-level">
+        {% for i in (1..skill.level) %}
+            <i class="fa fa-star"></i>
+        {% endfor %}
+    </td>
+</tr>

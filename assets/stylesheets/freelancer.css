@@ -544,3 +544,10 @@ div#maincontent {
   text-align: center;
   padding-top: 20px;
 }
+.skill-name {
+  margin: 0;
+  padding-right: 10px;
+}
+.skill-level {
+  font-size: 2em;
+}
