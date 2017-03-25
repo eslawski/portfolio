@@ -569,3 +569,6 @@ a:focus
     outline: none !important;
     -webkit-appearance: none;
 }
+.portfolio-action-button {
+  margin: 0 10px;
+}

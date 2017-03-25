@@ -15,19 +15,24 @@
                         <h2>{{portfolio_item.project_name}}</h2>
                         <hr class="star-primary">
                         <img src="{{portfolio_item.image_path}}" class="img-responsive img-centered portfolio-image-lg" alt="">
+
                             {% if portfolio_item.demo_link %}
-                                <a href="{{portfolio_item.demo_link}}" class="btn btn-lg btn-primary">
+                                <a href="{{portfolio_item.demo_link}}" class="btn btn-lg btn-primary portfolio-action-button">
                                     <i class="fa fa-{{portfolio_item.demo_icon}}"></i>
-                                    <span class="portfolio-action-label">Try it!</span>
+                                    <span class="portfolio-action-label">{{portfolio_item.demo_label}}</span>
                                 </a>
-                                &nbsp
                             {% endif %}
-                            <a href="{{portfolio_item.github_link}}" class="btn btn-lg btn-primary">
-                                <i class="fa fa-github"></i>
-                                <span class="portfolio-action-label">View on Github</span>
-                            </a>
+                            
+                            {% if portfolio_item.github_link %}
+                                <a href="{{portfolio_item.github_link}}" class="btn btn-lg btn-primary portfolio-action-button">
+                                    <i class="fa fa-github"></i>
+                                    <span class="portfolio-action-label">View on Github</span>
+                                </a>
+                            {% endif %}
+
                             <p class="portfolio-long-description">{{portfolio_item.long_description}}</p>
                         <button type="button" class="btn btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
                     </div>
                 </div>
             </div>
