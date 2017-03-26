@@ -570,14 +570,25 @@ a:focus
     -webkit-appearance: none;
 }
 .portfolio-action-button {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
-.profile-pic {
+.about-me-pic {
   float: left;
   margin-right: 10px;
+  max-width: 30%;
 }
 .centered-column-content {
   margin-right: auto;
   margin-left: auto;
+}
+.profile-pic {
+  border: 3px solid #FFFFFF;
+  max-width: 50%;
+}
+.extra-small-skill-section .skill-name,
+.extra-small-skill-section .skill-level {
+  /* Reduce the font size for all of the skills section because it runs
+      out of space quickly. */
+  font-size: 15px;
 }
